@@ -1,0 +1,7 @@
+.booking-summary { display: flex; flex-direction: column; gap: var(--space-12); padding: var(--space-16); border: var(--line) solid var(--border); border-radius: var(--radius-lg); }
+.booking-summary .summary-row { width: 100%; }
+.booking-summary .summary-row > :last-child { text-align: right; }
+.confirm-screen .booking-input { width: 100%; }
+.confirm-note { margin: 0; font-size: 14px; line-height: 20px; color: var(--muted); }
+.field-error { color: var(--tag-text); font-size: 13px; line-height: 18px; font-weight: 400; }
+.booking-input input[aria-invalid="true"] { border-color: var(--tag-text); }

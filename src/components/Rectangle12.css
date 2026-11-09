@@ -1,0 +1,8 @@
+.rectangle-12 {
+  position: relative;
+  width: var(--size-rectangle-12-width);
+  height: var(--size-rectangle-12-height);
+  overflow: clip;
+  border-radius: var(--radius-rectangle-12);
+  background: var(--color-rectangle-12);
+}

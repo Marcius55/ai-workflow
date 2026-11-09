@@ -1,0 +1,30 @@
+@font-face { font-family: Inter; font-weight: 400; src: url('/inter-regular.ttf'); font-display: swap; }
+@font-face { font-family: Inter; font-weight: 500; src: url('/inter-medium.ttf'); font-display: swap; }
+@font-face { font-family: Inter; font-weight: 600; src: url('/inter-semibold.ttf'); font-display: swap; }
+button, input { font-family: inherit; }
+button { cursor: pointer; }
+.booking-button { border: 0; padding: var(--space-12) var(--space-20); border-radius: var(--radius-md); background: var(--brand); color: var(--surface); font-size: 16px; line-height: 24px; font-weight: 600; white-space: nowrap; }
+.booking-button.secondary { border: var(--line) solid var(--border); background: var(--surface); color: var(--text); }
+.tag { display: inline-flex; align-items: center; padding: var(--space-4) var(--space-12); background: var(--color-rectangle-12); color: var(--tag-text); border-radius: var(--radius-pill); font-size: 13px; line-height: 18px; font-weight: 500; white-space: nowrap; }
+.time-slot { padding: var(--space-12) var(--space-16); border: var(--line) solid var(--border); border-radius: var(--radius-md); background: var(--surface); color: var(--text); font-size: 14px; line-height: 20px; font-weight: 500; }
+.time-slot.selected { border: 0; background: var(--brand); color: var(--surface); }
+.time-slot.disabled { opacity: .5; color: var(--muted); cursor: default; }
+.booking-input { width: var(--input-width); display: flex; flex-direction: column; gap: var(--space-8); font-size: 14px; font-weight: 500; line-height: 20px; }
+.booking-input input { width: 100%; padding: var(--space-12) var(--space-16); border: var(--line) solid var(--border); border-radius: var(--radius-md); background: var(--surface); font-size: 15px; line-height: 22px; color: var(--text); outline: none; }
+.booking-input input::placeholder { color: var(--muted); opacity: 1; }
+.booking-input input:focus::placeholder { opacity: 0; }
+.booking-input input:focus, .booking-input .focus-preview { border: var(--line-focus) solid var(--brand); }
+.top-bar { width: var(--bar-width); display: flex; align-items: center; gap: var(--space-12); padding: var(--space-16) var(--space-20); border-bottom: var(--line) solid var(--border); }
+.back-button { width: var(--icon-size); height: var(--icon-size); padding: 0; border: 0; background: transparent; display: grid; place-items: center; }
+.back-button img { display: block; }
+.top-bar h1 { flex: 1; margin: 0; font-size: 20px; font-weight: 600; line-height: 28px; white-space: nowrap; }
+.top-bar > span { color: var(--muted); font-size: 14px; line-height: 20px; white-space: nowrap; }
+.service-card { width: var(--card-width); display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-8); padding: var(--space-16); border: var(--line) solid var(--border); border-radius: var(--radius-lg); background: var(--surface); color: var(--text); text-align: left; }
+.service-card.selected { border: var(--line-focus) solid var(--brand); }
+.service-header { display: flex; justify-content: space-between; gap: var(--space-12); width: 100%; font-size: 20px; font-weight: 600; line-height: 28px; }
+.service-description { font-size: 15px; line-height: 22px; font-weight: 400; color: var(--muted); white-space: nowrap; }
+.summary-row { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-16); width: var(--summary-width); font-size: 15px; line-height: 22px; }
+.summary-row > :first-child { color: var(--muted); font-size: 14px; line-height: 20px; }
+.action-bar { width: var(--bar-width); border-top: var(--line) solid var(--border); padding: var(--space-16) var(--space-20); }
+.action-bar .booking-button { width: 100%; }
+button:focus-visible { outline: var(--line-focus) solid var(--brand); outline-offset: var(--space-4); }

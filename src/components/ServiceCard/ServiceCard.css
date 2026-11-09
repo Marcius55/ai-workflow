@@ -1,0 +1,28 @@
+.service-card {
+  transition:
+    transform var(--motion-card-duration) var(--motion-card-easing),
+    box-shadow var(--motion-card-duration) var(--motion-card-easing);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .service-card:hover {
+    transform: translateY(var(--service-card-lift));
+    box-shadow: var(--service-card-hover-shadow);
+  }
+}
+
+.service-card:focus-visible {
+  transform: translateY(var(--service-card-lift));
+  box-shadow: var(--service-card-hover-shadow);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-card {
+    transition: none;
+  }
+
+  .service-card:hover,
+  .service-card:focus-visible {
+    transform: none;
+  }
+}
